@@ -19,7 +19,7 @@ CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Technology Brands"
 
-Youdatabase.db?check_same_thread=False
+# Youdatabase.db?check_same_thread=False
 # Connect to Database and create database session
 engine = create_engine('sqlite:///techbrands.db')
 Base.metadata.bind = engine
