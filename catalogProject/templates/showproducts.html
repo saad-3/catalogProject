@@ -1,0 +1,21 @@
+
+<html>
+<head>
+  <a href="/">Home</a>
+</head>
+  <body>
+    <h1>{{brand.name}}</h1>
+    </br>
+    <a href="{{url_for('newProduct', brand_id = brand.id )}}"><h2>add new product</h2></a>
+    </br>
+    {% for x in products %}
+    <a href="{{url_for('specificProduct', brand_id = brand.id , product_id = x.id)}}">{{x.name}}</a>
+    </br>
+    description: {{x.description}}
+    </br>
+    price: {{x.price}}
+    </br>
+    </br>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+  <a href="/">Home</a>
+</head>
+  <body>
+    <h1>New Product: </h1>
+    <form  action="{{url_for('newProduct', brand_id = brand_id)}}" method="post">
+
+      <p>Name: </p>
+      <input type="text" name="name" >
+      <p>Description: </p>
+      <input type="text" name="description">
+      <p>Price:</p>
+      <input type="text" name="price" >
+      </br>
+      <input type="submit" name="add" value="Add">
+
+    </form>
+  </body>
+</html>

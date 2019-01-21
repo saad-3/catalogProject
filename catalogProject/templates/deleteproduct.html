@@ -1,0 +1,10 @@
+<html >
+  <body>
+    <h1>Are You Sure You Want To Delete This Product ?</h1>
+    <form action="{{url_for('deleteProduct', brand_id = brand_id , product_id = product_id)}}" method="post">
+      <input type="submit" name="delete" value="delete">
+      <a href="{{url_for('showProducts', brand_id = brand_id)}}">Cancel</a>
+
+    </form>
+  </body>
+</html>
